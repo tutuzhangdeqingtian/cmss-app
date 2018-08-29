@@ -1,0 +1,826 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] config
+[INFO] monitoring
+[INFO] registry
+[INFO] gateway
+[INFO] auth-service
+[INFO] account-service
+[INFO] statistics-service
+[INFO] notification-service
+[INFO] piggymetrics
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building piggymetrics 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.3.0.603:sonar (default-cli) @ piggymetrics ---
+[INFO] User cache: C:\Users\nbdragon\.sonar\cache
+[INFO] Load global repositories
+[INFO] Load global repositories (done) | time=99ms
+[INFO] User cache: C:\Users\nbdragon\.sonar\cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=8ms
+[INFO] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+[INFO] SonarQube version: 5.6.6
+[INFO] Default locale: "zh_CN", source code encoding: "GBK" (analysis is platform dependent)
+[INFO] governance ULTIMATE [Expiration: 2099-02-22, Server: *]
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=99ms
+[INFO] Load quality profiles
+[WARNING] Ability to set quality profile from command line using 'sonar.profile' is deprecated and will be dropped in a future SonarQube version. Please configure quality profile used by your project on SonarQube server.
+[INFO] Load quality profiles (done) | time=22ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=1067ms
+[WARNING] SCM provider autodetection failed. No SCM provider claims to support this project. Please use sonar.scm.provider to define SCM of your project.
+[INFO] Publish mode
+[INFO] -------------  Scan config
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=100ms
+[INFO] Base dir: C:\java\cmb1\pmetrics\config
+[INFO] Working dir: C:\java\cmb1\pmetrics\config\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 2 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] devcockpit ULTIMATE [Expiration: 2099-02-22, Server: *]
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=10ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=8ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=3ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=286ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan
+[INFO] 0 source files to be analyzed
+[INFO] 0/0 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=1ms
+[INFO] Sensor JavaSquidSensor (done) | time=617ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\config\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=0ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\config\target\sonar\pmd.xml
+[INFO] Execute PMD 5.4.2 done: 1042 ms
+[INFO] Sensor PmdSensor (done) | time=1070ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\config\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 475 ms
+[INFO] Sensor CheckstyleSensor (done) | time=481ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=34ms
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor SurefireSensor
+[INFO] parsing C:\java\cmb1\pmetrics\config\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=0ms
+[INFO] Sensor JaCoCoSensor
+[INFO] JaCoCoSensor: JaCoCo report not found : C:\java\cmb1\pmetrics\config\target\jacoco.exec
+[INFO] Sensor JaCoCoSensor (done) | time=1ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\config\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Sensor JaCoCoOverallSensor (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=203ms
+[INFO] Sensor XML Sensor
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor (done) | time=78ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=10ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\config\target\classes
+[INFO] Sensor jDepend sensor (done) | time=10ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=1ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\config\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\config\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\config\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=2425ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=3ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=6ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=0ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=208ms
+[INFO] -------------  Scan monitoring
+[INFO] Base dir: C:\java\cmb1\pmetrics\monitoring
+[INFO] Working dir: C:\java\cmb1\pmetrics\monitoring\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=1ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=4ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=5ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=85ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=38ms
+[INFO] Sensor JavaSquidSensor (done) | time=168ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\monitoring\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=0ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\monitoring\target\sonar\pmd.xml
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\monitoring\target\sonar\pmd-unit-tests.xml
+[INFO] Execute PMD 5.4.2 done: 406 ms
+[INFO] Sensor PmdSensor (done) | time=437ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\monitoring\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 144 ms
+[INFO] Sensor CheckstyleSensor (done) | time=146ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] 0/0 source files have been analyzed
+[INFO] parsing C:\java\cmb1\pmetrics\monitoring\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=10ms
+[INFO] Sensor JaCoCoSensor
+[INFO] JaCoCoSensor: JaCoCo report not found : C:\java\cmb1\pmetrics\monitoring\target\jacoco.exec
+[INFO] Sensor JaCoCoSensor (done) | time=0ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\monitoring\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Sensor JaCoCoOverallSensor (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=79ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor
+[INFO] Sensor XML Sensor (done) | time=14ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=1ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\monitoring\target\classes
+[INFO] Sensor jDepend sensor (done) | time=1ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=0ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\monitoring\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\monitoring\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\monitoring\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=1135ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=2ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=0ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=1ms
+[INFO] -------------  Scan registry
+[INFO] Base dir: C:\java\cmb1\pmetrics\registry
+[INFO] Working dir: C:\java\cmb1\pmetrics\registry\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 2 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=0ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=2ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=3ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=74ms
+[INFO] Java Test Files AST scan
+[INFO] 0 source files to be analyzed
+[INFO] 0/0 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=1ms
+[INFO] Sensor JavaSquidSensor (done) | time=111ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\registry\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=0ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\registry\target\sonar\pmd.xml
+[INFO] Execute PMD 5.4.2 done: 362 ms
+[INFO] Sensor PmdSensor (done) | time=393ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\registry\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 160 ms
+[INFO] Sensor CheckstyleSensor (done) | time=163ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] 0/0 source files have been analyzed
+[INFO] parsing C:\java\cmb1\pmetrics\registry\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=0ms
+[INFO] Sensor JaCoCoSensor
+[INFO] JaCoCoSensor: JaCoCo report not found : C:\java\cmb1\pmetrics\registry\target\jacoco.exec
+[INFO] Sensor JaCoCoSensor (done) | time=0ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\registry\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Sensor JaCoCoOverallSensor (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=83ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor
+[INFO] Sensor XML Sensor (done) | time=12ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=0ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\registry\target\classes
+[INFO] Sensor jDepend sensor (done) | time=1ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=0ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\registry\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\registry\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\registry\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=1036ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=2ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=0ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=1ms
+[INFO] -------------  Scan gateway
+[INFO] Base dir: C:\java\cmb1\pmetrics\gateway
+[INFO] Working dir: C:\java\cmb1\pmetrics\gateway\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=0ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=2ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=3ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=83ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=52ms
+[INFO] Sensor JavaSquidSensor (done) | time=168ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\gateway\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=1ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\gateway\target\sonar\pmd.xml
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\gateway\target\sonar\pmd-unit-tests.xml
+[INFO] Execute PMD 5.4.2 done: 326 ms
+[INFO] Sensor PmdSensor (done) | time=358ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\gateway\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 168 ms
+[INFO] Sensor CheckstyleSensor (done) | time=170ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] 0/0 source files have been analyzed
+[INFO] parsing C:\java\cmb1\pmetrics\gateway\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=2ms
+[INFO] Sensor JaCoCoSensor
+[INFO] JaCoCoSensor: JaCoCo report not found : C:\java\cmb1\pmetrics\gateway\target\jacoco.exec
+[INFO] Sensor JaCoCoSensor (done) | time=0ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\gateway\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Sensor JaCoCoOverallSensor (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=65ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor
+[INFO] Sensor XML Sensor (done) | time=10ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=1ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\gateway\target\classes
+[INFO] Sensor jDepend sensor (done) | time=6ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=0ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\gateway\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\gateway\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\gateway\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=1056ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=1ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=1ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=0ms
+[INFO] -------------  Scan auth-service
+[INFO] Base dir: C:\java\cmb1\pmetrics\auth-service
+[INFO] Working dir: C:\java\cmb1\pmetrics\auth-service\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 13 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=1ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=1ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=3ms
+[INFO] Java Main Files AST scan
+[INFO] 7 source files to be analyzed
+[INFO] 7/7 source files have been analyzed
+[WARNING] Classes not found during the analysis : [org.openid4java.consumer.ConsumerException, org.openid4java.consumer.ConsumerManager, org.springframework.jdbc.datasource.init.DataSourceInitializer, org.springframework.jdbc.datasource.init.DatabasePopulator, org.springframework.ldap.core.support.BaseLdapPathContextSource, org.springframework.security.ldap.authentication.BindAuthenticator, org.springframework.security.ldap.authentication.LdapAuthenticationProvider, org.springframework.security.ldap.authentication.LdapAuthenticator, org.springframework.security.ldap.authentication.PasswordComparisonAuthenticator, org.springframework.security.ldap.search.LdapUserSearch, org.springframework.security.ldap.userdetails.LdapAuthoritiesPopulator, org.springframework.security.ldap.userdetails.UserDetailsContextMapper, org.springframework.security.openid.AxFetchListFactory, org.springframework.security.openid.OpenIDAuthenticationFilter, org.springframework.security.openid.OpenIDAuthenticationToken, org.springframework.security.openid.OpenIDConsumer]
+[INFO] Java Main Files AST scan (done) | time=959ms
+[INFO] Java Test Files AST scan
+[INFO] 5 source files to be analyzed
+[INFO] 5/5 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=215ms
+[INFO] Sensor JavaSquidSensor (done) | time=1211ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\auth-service\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=1ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\auth-service\target\sonar\pmd.xml
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\auth-service\target\sonar\pmd-unit-tests.xml
+[INFO] Execute PMD 5.4.2 done: 479 ms
+[INFO] Sensor PmdSensor (done) | time=1370ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\auth-service\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 1454 ms
+[INFO] Sensor CheckstyleSensor (done) | time=1456ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] 0/0 source files have been analyzed
+[INFO] parsing C:\java\cmb1\pmetrics\auth-service\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=7ms
+[INFO] Sensor JaCoCoSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\auth-service\target\jacoco.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoSensor (done) | time=64ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\auth-service\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\auth-service\target\jacoco.exec
+[INFO] Analysing C:\java\cmb1\pmetrics\auth-service\target\sonar\jacoco-overall.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoOverallSensor (done) | time=43ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=90ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor
+[INFO] Sensor XML Sensor (done) | time=12ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=3ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\auth-service\target\classes
+[INFO] Sensor jDepend sensor (done) | time=4ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=1ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\auth-service\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\auth-service\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\auth-service\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=1499ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=6ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=1ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=8ms
+[INFO] -------------  Scan account-service
+[INFO] Base dir: C:\java\cmb1\pmetrics\account-service
+[INFO] Working dir: C:\java\cmb1\pmetrics\account-service\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 20 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=1ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=3ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=3ms
+[INFO] Java Main Files AST scan
+[INFO] 15 source files to be analyzed
+[INFO] 15/15 source files have been analyzed
+[WARNING] Classes not found during the analysis : [org.openid4java.consumer.ConsumerException, org.openid4java.consumer.ConsumerManager, org.springframework.security.openid.AxFetchListFactory, org.springframework.security.openid.OpenIDAuthenticationFilter, org.springframework.security.openid.OpenIDAuthenticationToken, org.springframework.security.openid.OpenIDConsumer]
+[INFO] Java Main Files AST scan (done) | time=2200ms
+[INFO] Java Test Files AST scan
+[INFO] 4 source files to be analyzed
+[INFO] 4/4 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=475ms
+[INFO] Sensor JavaSquidSensor (done) | time=2720ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\account-service\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=0ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\account-service\target\sonar\pmd.xml
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\account-service\target\sonar\pmd-unit-tests.xml
+[INFO] Execute PMD 5.4.2 done: 549 ms
+[INFO] Sensor PmdSensor (done) | time=2592ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\account-service\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 3401 ms
+[INFO] Sensor CheckstyleSensor (done) | time=3404ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] parsing C:\java\cmb1\pmetrics\account-service\target\surefire-reports
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor SurefireSensor (done) | time=40ms
+[INFO] Sensor JaCoCoSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\account-service\target\jacoco.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoSensor (done) | time=25ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\account-service\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\account-service\target\jacoco.exec
+[INFO] Analysing C:\java\cmb1\pmetrics\account-service\target\sonar\jacoco-overall.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoOverallSensor (done) | time=30ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=61ms
+[INFO] Sensor XML Sensor
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor (done) | time=11ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=4ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\account-service\target\classes
+[INFO] Sensor jDepend sensor (done) | time=6ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=0ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\account-service\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\account-service\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\account-service\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=1802ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=9ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=1ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=14ms
+[INFO] -------------  Scan statistics-service
+[INFO] Base dir: C:\java\cmb1\pmetrics\statistics-service
+[INFO] Working dir: C:\java\cmb1\pmetrics\statistics-service\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 28 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=2ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=3ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=4ms
+[INFO] Java Main Files AST scan
+[INFO] 21 source files to be analyzed
+[INFO] 21/21 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=2410ms
+[INFO] Java Test Files AST scan
+[INFO] 6 source files to be analyzed
+[INFO] 6/6 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=452ms
+[INFO] Sensor JavaSquidSensor (done) | time=2919ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\statistics-service\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=0ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\statistics-service\target\sonar\pmd.xml
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\statistics-service\target\sonar\pmd-unit-tests.xml
+[INFO] Execute PMD 5.4.2 done: 637 ms
+[INFO] Sensor PmdSensor (done) | time=3123ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\statistics-service\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 3989 ms
+[INFO] Sensor CheckstyleSensor (done) | time=3991ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] 0/0 source files have been analyzed
+[INFO] parsing C:\java\cmb1\pmetrics\statistics-service\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=4ms
+[INFO] Sensor JaCoCoSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\statistics-service\target\jacoco.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoSensor (done) | time=18ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\statistics-service\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\statistics-service\target\jacoco.exec
+[INFO] Analysing C:\java\cmb1\pmetrics\statistics-service\target\sonar\jacoco-overall.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoOverallSensor (done) | time=33ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=67ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor
+[INFO] Sensor XML Sensor (done) | time=11ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=4ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\statistics-service\target\classes
+[INFO] Sensor jDepend sensor (done) | time=7ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=0ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\statistics-service\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\statistics-service\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\statistics-service\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=2028ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=1ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=6ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=1ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=11ms
+[INFO] -------------  Scan notification-service
+[INFO] Base dir: C:\java\cmb1\pmetrics\notification-service
+[INFO] Working dir: C:\java\cmb1\pmetrics\notification-service\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Binary dirs: target/classes
+[INFO] Source encoding: UTF-8, default locale: zh_CN
+[INFO] Index files
+[INFO] 23 files indexed
+[INFO] Quality profile for java: FAREPRO
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=1ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=4ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=5ms
+[INFO] Java Main Files AST scan
+[INFO] 16 source files to be analyzed
+[INFO] 16/16 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=1372ms
+[INFO] Java Test Files AST scan
+[INFO] 6 source files to be analyzed
+[INFO] 6/6 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=424ms
+[INFO] Sensor JavaSquidSensor (done) | time=1845ms
+[INFO] Sensor CoberturaSensor
+[WARNING] Cobertura report not found at C:\java\cmb1\pmetrics\notification-service\target\site\cobertura\coverage.xml
+[INFO] Sensor CoberturaSensor (done) | time=0ms
+[INFO] Sensor PmdSensor
+[INFO] Execute PMD 5.4.2...
+[INFO] Java version: 1.5
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\notification-service\target\sonar\pmd.xml
+[INFO] PMD configuration: C:\java\cmb1\pmetrics\notification-service\target\sonar\pmd-unit-tests.xml
+[INFO] Execute PMD 5.4.2 done: 519 ms
+[INFO] Sensor PmdSensor (done) | time=1636ms
+[INFO] Sensor CheckstyleSensor
+[INFO] Execute Checkstyle 7.3...
+[INFO] Checkstyle configuration: C:\java\cmb1\pmetrics\notification-service\target\sonar\checkstyle.xml
+[INFO] Checkstyle charset: UTF-8
+[INFO] Execute Checkstyle 7.3 done: 2149 ms
+[INFO] Sensor CheckstyleSensor (done) | time=2152ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SurefireSensor
+[INFO] 0/0 source files have been analyzed
+[INFO] parsing C:\java\cmb1\pmetrics\notification-service\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=4ms
+[INFO] Sensor JaCoCoSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\notification-service\target\jacoco.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoSensor (done) | time=14ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: C:\java\cmb1\pmetrics\notification-service\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Analysing C:\java\cmb1\pmetrics\notification-service\target\jacoco.exec
+[INFO] Analysing C:\java\cmb1\pmetrics\notification-service\target\sonar\jacoco-overall.exec
+[INFO] No information about coverage per test.
+[INFO] Sensor JaCoCoOverallSensor (done) | time=26ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=60ms
+[INFO] Sensor XML Sensor
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor (done) | time=12ms
+[INFO] Sensor SmellMeasuresSensor
+[INFO] Sensor SmellMeasuresSensor (done) | time=3ms
+[INFO] Sensor jDepend sensor
+[INFO] Analysing classes in C:\java\cmb1\pmetrics\notification-service\target\classes
+[INFO] Sensor jDepend sensor (done) | time=4ms
+[INFO] Sensor Packages sensor
+[INFO] Sensor Packages sensor (done) | time=0ms
+[INFO] Sensor FindBugs Sensor
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\notification-service\target\sonar\findbugs\fb-contrib.jar
+[INFO] Loading findbugs plugin: C:\java\cmb1\pmetrics\notification-service\target\sonar\findbugs\findsecbugs-plugin.jar
+[INFO] Findbugs output report: C:\java\cmb1\pmetrics\notification-service\target\sonar\findbugs-result.xml
+[INFO] Sensor FindBugs Sensor (done) | time=1561ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=6ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=1ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] DefaultCpdBlockIndexer is used for xml
+[INFO] Sensor CPD Block Indexer (done) | time=5ms
+[INFO] -------------  Scan piggymetrics
+[INFO] Base dir: C:\java\cmb1\pmetrics
+[INFO] Working dir: c:\java\cmb1\pmetrics\target\sonar
+[INFO] Source encoding: GBK, default locale: zh_CN
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=0ms
+[INFO] Sensor SCM Sensor
+[INFO] No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[INFO] Sensor SCM Sensor (done) | time=0ms
+[INFO] Sensor Embedded CSS Analyzer Sensor
+[INFO] 0 source files to be analyzed
+[INFO] Sensor Embedded CSS Analyzer Sensor (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor
+[INFO] Sensor SonarJavaXmlFileSensor (done) | time=0ms
+[INFO] Sensor Analyzer for "php.ini" files
+[INFO] Sensor Analyzer for "php.ini" files (done) | time=0ms
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=0ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=0ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=0ms
+[INFO] Calculating CPD for 33 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 1721ms, dir size=1 MB
+[INFO] Analysis reports compressed in 279ms, zip size=399 KB
+[INFO] Analysis report uploaded in 41ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://192.168.100.134:9000/dashboard/index/com.piggymetrics:piggymetrics
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://192.168.100.134:9000/api/ce/task?id=AWC6K0DhbfwFbUs542zS
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] config ............................................. SKIPPED
+[INFO] monitoring ......................................... SKIPPED
+[INFO] registry ........................................... SKIPPED
+[INFO] gateway ............................................ SKIPPED
+[INFO] auth-service ....................................... SKIPPED
+[INFO] account-service .................................... SKIPPED
+[INFO] statistics-service ................................. SKIPPED
+[INFO] notification-service ............................... SKIPPED
+[INFO] piggymetrics ....................................... SUCCESS [01:03 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:03 min
+[INFO] Finished at: 2018-01-03T11:58:05+08:00
+[INFO] Final Memory: 155M/3357M
+[INFO] ------------------------------------------------------------------------
